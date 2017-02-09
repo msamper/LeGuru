@@ -1,9 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
 
 //importing Material 2
 import { MaterialModule } from '@angular/material';
@@ -12,15 +11,17 @@ import 'hammerjs';
 
 @NgModule({
   declarations: [
-    AppComponent
+    //LogInComponent
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
     FormsModule,
     HttpModule,
     MaterialModule.forRoot()
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    //{provide: NgLocalization, useClass: NgLocaleLocalization},
+  ],
+  exports: []//LogInComponent]
 })
-export class AppModule { }
+export class LogInModule { }
