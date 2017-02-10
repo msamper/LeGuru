@@ -4,6 +4,7 @@
 /dist
 /tmp
 /aot
+/target
 /src/***/**/*.js
 /src/***/**/*.js.map
 
